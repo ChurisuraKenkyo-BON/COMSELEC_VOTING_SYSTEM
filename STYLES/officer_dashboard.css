@@ -1,0 +1,187 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+
+header {
+    background-color: #003366; 
+    color: #fff;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+
+.button-container {
+    display: flex;
+    gap: 10px; 
+}
+
+
+.logout-button {
+    background-color: #ff6600; 
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+
+.dashboard-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.form-container {
+    width: 40%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+    margin-top: 0;
+    color: #003366; 
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.form-container label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: 500;
+    color: #555;
+}
+
+.form-container input,
+.form-container select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.form-container button[type="submit"] {
+    background-color: #003366;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.form-container button[type="submit"]:hover {
+    background-color: #002244; 
+}
+
+
+.candidates-container {
+    width: 55%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.candidates-container h2 {
+    margin-top: 0;
+    color: #003366; 
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #003366; 
+    color: #fff;
+}
+
+td img {
+    max-width: 100px;
+    height: auto;
+    border-radius: 4px;
+}
+
+
+.toggle-button {
+    background-color: #ff6600; 
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: background-color 0.3s ease;
+}
+
+.toggle-button:hover {
+    background-color: #cc5200; 
+}
+
+.delete-button {
+    background-color: #dc3545; 
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: background-color 0.3s ease;
+}
+
+.delete-button:hover {
+    background-color: #c82333; 
+}
+
+
+.tally-button {
+    background-color: #ff6600; 
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.tally-button:hover {
+    background-color: #cc5200; 
+}

@@ -1,0 +1,108 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.tally-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.tally-container h1 {
+    color: #003366; 
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.back-button {
+    background-color: #003366; 
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #002244; 
+}
+
+.tally-display {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.tally-display h2 {
+    color: #003366; 
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.candidate-card {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.candidate-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+    margin-right: 15px;
+}
+
+.candidate-info {
+    flex: 1;
+}
+
+.candidate-info h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #003366; 
+}
+
+.candidate-info p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.total-voters {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.total-voters h2 {
+    color: #003366;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.total-voters p {
+    margin: 0;
+    font-size: 16px;
+    color: #555;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Voting</title>
+    <link rel="stylesheet" href="../STYLES/student_voting.css">
+</head>
+<body>
+    <div class="voting-container">
+
+        <div class="student-details">
+            <h2>Student Information</h2>
+            <form id="student-info-form">
+                <label for="tupv-id">TUPV-ID-NUMBER:</label>
+                <input type="text" id="tupv-id" name="tupv-id" required>
+                <label for="course">COURSE:</label>
+                <input type="text" id="course" name="course" required>
+                <label for="department">DEPARTMENT:</label>
+                <input type="text" id="department" name="department" required>
+                <label for="year-level">Year-Level:</label>
+                <input type="text" id="year-level" name="year-level" required>
+                <button id="back-button" class="back-button">Back</button>
+                <button type="submit" id="submit-vote">Submit Vote</button>
+            </form>
+        </div>
+
+        <div class="voting-options">
+            <h2>Vote for Candidates</h2>
+            <div id="candidates-list">
+
+            </div>
+        </div>
+    </div>
+
+    <div id="receipt-popup" class="popup">
+        <div class="popup-content">
+            <div id="receipt-content"></div>
+            <button id="confirm-vote">Confirm Vote</button>
+            <button id="close-popup">Close</button>
+        </div>
+    </div>
+
+    <script src="../SCRIPTS/student_voting.js"></script>
+</body>
+</html>

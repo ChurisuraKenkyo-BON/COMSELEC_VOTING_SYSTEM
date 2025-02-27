@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Officer Dashboard</title>
+    <link rel="stylesheet" href="../STYLES/officer_dashboard.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <header>
+            <h1>COMSELEC OFFICER DASHBOARD</h1>
+            <div class="button-container">
+                <button onclick="window.location.href='../VIEWS/index.html'" class="logout-button">Logout</button>
+                <button onclick="window.location.href='tally_dashboard.html'" class="tally-button">Tally</button>
+            </div>
+        </header>
+        <div class="form-container">
+            <h2>ADD CANDIDATES</h2>
+            <form action="../BACKENDS/add_candidate.php" method="POST" enctype="multipart/form-data">
+                <label for="position">Position:</label>
+                <select id="position" name="position" required>
+                    <option value="usg_president">USG PRESIDENT</option>
+                    <option value="usg_vice_president">USG VICE PRESIDENT</option>
+                    <option value="senators">SENATORS</option>
+                </select>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="course">Course:</label>
+                <input type="text" id="course" name="course" required>
+                <label for="department">Department:</label>
+                <input type="text" id="department" name="department" required>
+                <label for="year_level">Year Level:</label>
+                <input type="text" id="year_level" name="year_level" required>
+                <label for="image">Image:</label>
+                <input type="file" id="image" name="image" accept="image/*" required>
+                <button type="submit">Add Candidate</button>
+            </form>
+        </div>
+        <div class="candidates-container">
+            <h2>VIEW CANDIDATES</h2>
+            <div id="candidates-list">
+            </div>
+        </div>
+    </div>
+
+    <script src="../SCRIPTS/dashboard.js"></script>
+</body>
+</html>
